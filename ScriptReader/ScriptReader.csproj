@@ -1,0 +1,133 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CDF3A705-FC60-42DB-9279-ABC871CF8E28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ScriptReader</RootNamespace>
+    <AssemblyName>ScriptReader</AssemblyName>
+    <ApplicationIcon>online.sccnn.com__color_002.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\Actor.cs" />
+    <Compile Include="Domain\Face.cs" />
+    <Compile Include="Domain\Line.cs" />
+    <Compile Include="Domain\Scene.cs" />
+    <Compile Include="Domain\Story.cs" />
+    <Compile Include="Domain\Story2.cs" />
+    <Compile Include="Service\AvgsReader.cs" />
+    <Compile Include="Service\MyEnum.cs" />
+    <Compile Include="Service\StoryReader.cs" />
+    <Compile Include="Service\StoryReader2.cs" />
+    <Compile Include="UI\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormEditScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormEditScript.Designer.cs">
+      <DependentUpon>FormEditScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UI\FormAbout.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormEditScript.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormEditScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormTextTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormTextTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\FormTextTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormTextTest.Designer.cs">
+      <DependentUpon>FormTextTest.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0000.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="online.sccnn.com__color_002.ico" />
+    <None Include="Resources\excalibur base logo.jpg" />
+    <None Include="Resources\default.png" />
+    <None Include="Resources\logo160-80.jpg" />
+    <None Include="Resources\black.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
