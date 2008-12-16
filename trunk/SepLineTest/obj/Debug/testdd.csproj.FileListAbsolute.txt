@@ -1,0 +1,7 @@
+E:\AVG\TEST Projects\testdd\testdd\obj\Debug\ResolveAssemblyReference.cache
+E:\AVG\TEST Projects\testdd\testdd\obj\Debug\testdd.MainForm.resources
+E:\AVG\TEST Projects\testdd\testdd\obj\Debug\testdd.csproj.GenerateResource.Cache
+E:\AVG\TEST Projects\testdd\testdd\bin\Debug\testdd.exe
+E:\AVG\TEST Projects\testdd\testdd\bin\Debug\testdd.pdb
+E:\AVG\TEST Projects\testdd\testdd\obj\Debug\testdd.exe
+E:\AVG\TEST Projects\testdd\testdd\obj\Debug\testdd.pdb
