@@ -69,7 +69,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(186, 85);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Release 1.5.12.6\r\n\r\nProduced by Arthur@Excalibur\r\nE-mail:\r\nBBS:";
+            this.label2.Text = "Release 1.6.1.10\r\n\r\nProduced by Arthur@Excalibur\r\nE-mail:\r\nBBS:";
             // 
             // BtnAboutOk
             // 
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 425);
+            this.ClientSize = new System.Drawing.Size(379, 425);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.label3);

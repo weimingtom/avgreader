@@ -22,3 +22,14 @@ I:\AVGreader\ScriptReader\obj\Debug\ScriptReader.FormMain.resources
 I:\AVGreader\ScriptReader\obj\Debug\ScriptReader.Properties.Resources.resources
 I:\AVGreader\ScriptReader\obj\Debug\ScriptReader.UI.FormTextTest.resources
 I:\AVGreader\ScriptReader\obj\Debug\ScriptReader.csproj.GenerateResource.Cache
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.exe
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.pdb
+I:\GoogleCode\avgreader\bin\ScriptReader.exe
+I:\GoogleCode\avgreader\bin\ScriptReader.pdb
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ResolveAssemblyReference.cache
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.UI.FormAbout.resources
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.UI.FormEditScript.resources
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.FormMain.resources
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.Properties.Resources.resources
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.UI.FormTextTest.resources
+I:\GoogleCode\avgreader\ScriptReader\obj\Debug\ScriptReader.csproj.GenerateResource.Cache

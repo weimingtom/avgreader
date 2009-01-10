@@ -14,7 +14,7 @@ namespace AVGreader.UI
         public FormNew()
         {
             InitializeComponent();
-            this.ClientSize = new System.Drawing.Size(800, 600);
+            this.ClientSize = new System.Drawing.Size(960, 540);
 
             //MessageBox.Show("游戏分辨率为：" + ClientSize.Width.ToString() + " x " + ClientSize.Height.ToString());
         }

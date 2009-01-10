@@ -17,3 +17,11 @@ I:\AVGreader\AVGreader\obj\Debug\AVGreader.UI.FormNew.resources
 I:\AVGreader\AVGreader\obj\Debug\AVGreader.csproj.GenerateResource.Cache
 I:\AVGreader\AVGreader\obj\Debug\AVGreader.exe
 I:\AVGreader\AVGreader\obj\Debug\AVGreader.pdb
+I:\GoogleCode\avgreader\bin\AVGreader.exe
+I:\GoogleCode\avgreader\bin\AVGreader.pdb
+I:\GoogleCode\avgreader\AVGreader\obj\Debug\ResolveAssemblyReference.cache
+I:\GoogleCode\avgreader\AVGreader\obj\Debug\AVGreader.Properties.Resources.resources
+I:\GoogleCode\avgreader\AVGreader\obj\Debug\AVGreader.UI.FormNew.resources
+I:\GoogleCode\avgreader\AVGreader\obj\Debug\AVGreader.csproj.GenerateResource.Cache
+I:\GoogleCode\avgreader\AVGreader\obj\Debug\AVGreader.exe
+I:\GoogleCode\avgreader\AVGreader\obj\Debug\AVGreader.pdb

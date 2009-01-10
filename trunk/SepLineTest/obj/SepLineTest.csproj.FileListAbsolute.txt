@@ -21,3 +21,10 @@ I:\AVGreader\SepLineTest\obj\Debug\SepLineTest.MainForm.resources
 I:\AVGreader\SepLineTest\obj\Debug\SepLineTest.csproj.GenerateResource.Cache
 I:\AVGreader\SepLineTest\obj\Debug\SepLineTest.exe
 I:\AVGreader\SepLineTest\obj\Debug\SepLineTest.pdb
+I:\GoogleCode\avgreader\bin\SepLineTest.exe
+I:\GoogleCode\avgreader\bin\SepLineTest.pdb
+I:\GoogleCode\avgreader\SepLineTest\obj\Debug\ResolveAssemblyReference.cache
+I:\GoogleCode\avgreader\SepLineTest\obj\Debug\SepLineTest.MainForm.resources
+I:\GoogleCode\avgreader\SepLineTest\obj\Debug\SepLineTest.csproj.GenerateResource.Cache
+I:\GoogleCode\avgreader\SepLineTest\obj\Debug\SepLineTest.exe
+I:\GoogleCode\avgreader\SepLineTest\obj\Debug\SepLineTest.pdb

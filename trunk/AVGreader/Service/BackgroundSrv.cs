@@ -27,7 +27,6 @@ namespace AVGreader.Service
 
         #endregion
 
-
         #region 载入资源
         /// <summary>
         /// 载入资源
