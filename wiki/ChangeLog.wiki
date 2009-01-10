@@ -1,0 +1,21 @@
+#labels Featured,Phase-Implementation
+#How it grows...
+
+= Introduction =
+
+Write down how it grows, step by step...
+
+
+= Details =
+
+ * == 2009-1-10 ==
+
+   === ScriptReader] === 
+   # Modify 2 thumb panel as 16:9. 
+   # Add frame picture on graphic panel.
+   # Read SCENE as .JPG
+   === AVGreader ===
+   # Change window as 960*540, but didn't change any code inside. 
+   # Read SCENE as .JPG.
+   === resources ===
+   # Add 10 .JPG backgrounds.
