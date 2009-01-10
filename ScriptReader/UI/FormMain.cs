@@ -27,7 +27,7 @@ namespace ScriptReader
         {
             InitializeComponent();
 
-            BGpath = currentDir + @"DATA\IMG\background.BMP";
+            BGpath = currentDir + @"DATA\IMG\background.jpg";
             CHpath = currentDir + @"DATA\IMG\actor.png";
 
             btnSTART.Enabled = false;
@@ -232,21 +232,28 @@ namespace ScriptReader
                 //actor
                 Image pic = Image.FromFile(CHpath);
                 int Width = pic.Width * panel1.Height / pic.Height;
-                GThumb.DrawImage(pic, 0, 0, Width, panel1.Height);
+                GThumb.DrawImage(pic, panel1.Width / 10, 0, Width, panel1.Height);
             }
+            // ’‚¿Ôª≠…œframe
+            Image picf = Image.FromFile(currentDir + @"DATA\IMG\frame.png");
+            GThumb.DrawImage(picf, 
+                             panel1.Width / 10 + ThumbPicCH.Width / 2, 
+                             panel1.Height / 2, 
+                             panel1.Width - (panel1.Width / 5 + ThumbPicCH.Width / 2), 
+                             panel1.Height / 2);
             if (checkTXT.Checked == true)
             {
                 //words
-                Font font = new Font("Œ¢»Ì—≈∫⁄", 10);
+                Font font = new Font("Œ¢»Ì—≈∫⁄", 9);
                 Brush brush = new SolidBrush(ThumbText.ForeColor);
-                Rectangle rect = new Rectangle(63, 162, 238, 52);
+                Rectangle rect = new Rectangle(140, 130, 255, 200);
                 GThumb.DrawString(Words, font, brush, rect);
             }
         }
 
         private void ShowText(string words)
         {
-            Words = words;
+            Words = Words + "\n" + words;
             Render();
             foreach (char ch in words)
             {
@@ -255,7 +262,7 @@ namespace ScriptReader
                 Application.DoEvents();
                 //GroupDisplay.Refresh();
                 //groupINFO.Refresh();
-                Application.DoEvents();
+                //Application.DoEvents();
             }
         }
 
@@ -295,6 +302,7 @@ namespace ScriptReader
             System.Threading.Thread.Sleep(850);
             ThumbText.Text = "";
             tbInfoWORD.Text = ThumbText.Text;
+            Words = "";
         }
 
         private void HandleBR ()

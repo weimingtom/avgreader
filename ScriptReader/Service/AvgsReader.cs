@@ -29,7 +29,7 @@ namespace ScriptReader.Service
                     name += tempStr[i];
                 for (i+=2; tempStr[i] != ']'; i++)
                     id += tempStr[i];
-                path = currentDir + @"DATA\SCENE\" + id + @".bmp";
+                path = currentDir + @"DATA\SCENE\" + id + @".jpg";
 
                 scene.Name = name;
                 scene.ID = id;

@@ -107,10 +107,10 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 599);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 600);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.statusStrip1.Size = new System.Drawing.Size(845, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1002, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -129,7 +129,7 @@
             this.GroupDisplay.Controls.Add(this.panel2);
             this.GroupDisplay.Location = new System.Drawing.Point(12, 37);
             this.GroupDisplay.Name = "GroupDisplay";
-            this.GroupDisplay.Size = new System.Drawing.Size(325, 263);
+            this.GroupDisplay.Size = new System.Drawing.Size(412, 259);
             this.GroupDisplay.TabIndex = 1;
             this.GroupDisplay.TabStop = false;
             this.GroupDisplay.Text = "控件缩略图（不支持半透明）";
@@ -143,24 +143,24 @@
             this.panel2.Controls.Add(this.ThumbPicBG);
             this.panel2.Location = new System.Drawing.Point(6, 20);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(312, 233);
+            this.panel2.Size = new System.Drawing.Size(400, 225);
             this.panel2.TabIndex = 3;
             // 
             // ThumbText
             // 
             this.ThumbText.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ThumbText.Location = new System.Drawing.Point(63, 162);
+            this.ThumbText.Location = new System.Drawing.Point(105, 129);
             this.ThumbText.Name = "ThumbText";
-            this.ThumbText.Size = new System.Drawing.Size(238, 52);
+            this.ThumbText.Size = new System.Drawing.Size(255, 72);
             this.ThumbText.TabIndex = 4;
             this.ThumbText.Text = "";
             // 
             // ThumbPicCH
             // 
             this.ThumbPicCH.BackColor = System.Drawing.Color.Transparent;
-            this.ThumbPicCH.Location = new System.Drawing.Point(-1, -1);
+            this.ThumbPicCH.Location = new System.Drawing.Point(40, 0);
             this.ThumbPicCH.Name = "ThumbPicCH";
-            this.ThumbPicCH.Size = new System.Drawing.Size(146, 233);
+            this.ThumbPicCH.Size = new System.Drawing.Size(131, 225);
             this.ThumbPicCH.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ThumbPicCH.TabIndex = 3;
             this.ThumbPicCH.TabStop = false;
@@ -169,9 +169,9 @@
             // 
             this.ThumbPicBG.BackColor = System.Drawing.Color.Black;
             this.ThumbPicBG.Image = global::ScriptReader.Properties.Resources.black;
-            this.ThumbPicBG.Location = new System.Drawing.Point(-1, -1);
+            this.ThumbPicBG.Location = new System.Drawing.Point(0, 0);
             this.ThumbPicBG.Name = "ThumbPicBG";
-            this.ThumbPicBG.Size = new System.Drawing.Size(312, 233);
+            this.ThumbPicBG.Size = new System.Drawing.Size(400, 225);
             this.ThumbPicBG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ThumbPicBG.TabIndex = 2;
             this.ThumbPicBG.TabStop = false;
@@ -237,7 +237,7 @@
             this.帮助ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(845, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1002, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -340,7 +340,7 @@
             this.groupINFO.Controls.Add(this.tbInfoSCENE);
             this.groupINFO.Controls.Add(this.tbInfoFACE);
             this.groupINFO.Controls.Add(this.tbInfoCH);
-            this.groupINFO.Location = new System.Drawing.Point(343, 149);
+            this.groupINFO.Location = new System.Drawing.Point(430, 149);
             this.groupINFO.Name = "groupINFO";
             this.groupINFO.Size = new System.Drawing.Size(233, 209);
             this.groupINFO.TabIndex = 0;
@@ -438,9 +438,9 @@
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.rtbSTORY);
-            this.groupBox1.Location = new System.Drawing.Point(582, 37);
+            this.groupBox1.Location = new System.Drawing.Point(669, 37);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(251, 548);
+            this.groupBox1.Size = new System.Drawing.Size(321, 549);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "脚本追踪";
@@ -450,10 +450,11 @@
             this.rtbSTORY.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtbSTORY.BackColor = System.Drawing.Color.White;
             this.rtbSTORY.Location = new System.Drawing.Point(6, 20);
             this.rtbSTORY.Name = "rtbSTORY";
             this.rtbSTORY.ReadOnly = true;
-            this.rtbSTORY.Size = new System.Drawing.Size(239, 518);
+            this.rtbSTORY.Size = new System.Drawing.Size(309, 519);
             this.rtbSTORY.TabIndex = 4;
             this.rtbSTORY.Text = "";
             // 
@@ -463,15 +464,15 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Location = new System.Drawing.Point(6, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(312, 233);
+            this.panel1.Size = new System.Drawing.Size(400, 225);
             this.panel1.TabIndex = 6;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.panel1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 323);
+            this.groupBox2.Location = new System.Drawing.Point(12, 310);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(325, 263);
+            this.groupBox2.Size = new System.Drawing.Size(412, 263);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "图形缩略图（速度不理想）";
@@ -485,7 +486,7 @@
             this.groupBox3.Controls.Add(this.checkCH);
             this.groupBox3.Controls.Add(this.checkTXT);
             this.groupBox3.Controls.Add(this.checkBG);
-            this.groupBox3.Location = new System.Drawing.Point(343, 37);
+            this.groupBox3.Location = new System.Drawing.Point(430, 37);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(233, 106);
             this.groupBox3.TabIndex = 7;
@@ -525,7 +526,7 @@
             this.groupBox4.Controls.Add(this.btnSTOP);
             this.groupBox4.Controls.Add(this.btnSTART);
             this.groupBox4.Controls.Add(this.btnGOBACK);
-            this.groupBox4.Location = new System.Drawing.Point(343, 364);
+            this.groupBox4.Location = new System.Drawing.Point(430, 364);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(233, 161);
             this.groupBox4.TabIndex = 8;
@@ -674,7 +675,7 @@
             this.groupScriptFunction.Controls.Add(this.btnScriptClose);
             this.groupScriptFunction.Controls.Add(this.btnScriptReload);
             this.groupScriptFunction.Controls.Add(this.btnScriptEdit);
-            this.groupScriptFunction.Location = new System.Drawing.Point(343, 531);
+            this.groupScriptFunction.Location = new System.Drawing.Point(430, 531);
             this.groupScriptFunction.Name = "groupScriptFunction";
             this.groupScriptFunction.Size = new System.Drawing.Size(233, 55);
             this.groupScriptFunction.TabIndex = 10;
@@ -685,7 +686,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 621);
+            this.ClientSize = new System.Drawing.Size(1002, 622);
             this.Controls.Add(this.groupScriptFunction);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -700,7 +701,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ScriptReader Test Tool  1.5.12.6";
+            this.Text = "ScriptReader Test Tool  1.6.1.10";
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormMain_KeyUp);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();

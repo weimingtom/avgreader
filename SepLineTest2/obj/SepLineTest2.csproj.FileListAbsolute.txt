@@ -22,3 +22,14 @@ I:\AVGreader\SepLineTest2\obj\Debug\SepLineTest2.UI.FormSetPos.resources
 I:\AVGreader\SepLineTest2\obj\Debug\SepLineTest2.csproj.GenerateResource.Cache
 I:\AVGreader\SepLineTest2\obj\Debug\SepLineTest2.exe
 I:\AVGreader\SepLineTest2\obj\Debug\SepLineTest2.pdb
+I:\GoogleCode\avgreader\bin\SepLineTest2.exe
+I:\GoogleCode\avgreader\bin\SepLineTest2.pdb
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\ResolveAssemblyReference.cache
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.UI.FormAbout.resources
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.UI.FormEditScript.resources
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.UI.FormMain.resources
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.Properties.Resources.resources
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.UI.FormSetPos.resources
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.csproj.GenerateResource.Cache
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.exe
+I:\GoogleCode\avgreader\SepLineTest2\obj\Debug\SepLineTest2.pdb
