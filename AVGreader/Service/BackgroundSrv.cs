@@ -45,7 +45,11 @@ namespace AVGreader.Service
         public static void Render()
         {
             //Engine.sprite.Draw2D(Background1, new PointF(0, 0), 0, new PointF(0, 0), Color.White);
-            EngineSrv.sprite.Draw2D(Background1, new Rectangle(0, 0, 1024, 768), new SizeF(EngineSrv.parent.ClientSize.Width, EngineSrv.parent.ClientSize.Height), new PointF(0, 0), Color.White);  //第二个属性为裁剪图片，具体数值视图像大小而定
+            EngineSrv.sprite.Draw2D(Background1, 
+                                    new Rectangle(0, 0, 1024, 768), //该属性为裁剪图片，具体数值视图像大小而定
+                                    new SizeF(EngineSrv.parent.ClientSize.Width, EngineSrv.parent.ClientSize.Height), 
+                                    new PointF(0, 0), 
+                                    Color.White);  
 
         }
 

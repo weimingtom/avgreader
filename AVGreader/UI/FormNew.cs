@@ -16,7 +16,7 @@ namespace AVGreader.UI
             InitializeComponent();
             this.ClientSize = new System.Drawing.Size(960, 540);
 
-            //MessageBox.Show("游戏分辨率为：" + ClientSize.Width.ToString() + " x " + ClientSize.Height.ToString());
+            MessageBox.Show("游戏分辨率为：" + ClientSize.Width.ToString() + " x " + ClientSize.Height.ToString());
         }
 
         private void FormNew_KeyUp(object sender, KeyEventArgs e)
@@ -29,7 +29,7 @@ namespace AVGreader.UI
 
         private void FormNew_FormClosing(object sender, FormClosingEventArgs e)
         {
-            EngineSrv.NowRunState = MyEnum.RunStatement.END;
+            EngineSrv.nowRunState = MyEnum.RunStatement.END;
         }
     }
 }

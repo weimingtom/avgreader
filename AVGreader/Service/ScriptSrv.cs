@@ -13,14 +13,17 @@ namespace AVGreader.Service
         #region 声明
 
         private static AvgsReader avgsReader = new AvgsReader();
-        private static StoryReader storyReader = new StoryReader();
-        private static Story _story = storyReader.GetWholeStory();
+        private static StoryReader2 storyReader = new StoryReader2();
 
         #endregion
 
         #region 属性
 
-        public static Story story
+        private static Story2 _story = storyReader.GetWholeStory();
+        /// <summary>
+        /// 主剧本story.avgs读取
+        /// </summary>
+        public static Story2 story
         {
             get { return _story; }
             set { _story = value; }
@@ -28,15 +31,16 @@ namespace AVGreader.Service
 
         #endregion
 
-
         #region 脚本处理
 
         /// <summary>
         /// 语句分发主函数
         /// </summary>
         /// <param name="cmd">语句</param>
-        public static void QueryScriptCommand(string cmd)
+        public static void QueryScriptCommand(long nowIndex)
         {
+            string cmd = story.GetTextByIndex(nowIndex);
+
             if (cmd == "<PAGE>")
             {
                 HandlePage();
@@ -142,7 +146,7 @@ namespace AVGreader.Service
         /// </summary>
         private static void HandleEnd()
         {
-            EngineSrv.NowRunState = MyEnum.RunStatement.END;
+            EngineSrv.nowRunState = MyEnum.RunStatement.END;
             MessageBox.Show("执行完毕！");
         }
 
