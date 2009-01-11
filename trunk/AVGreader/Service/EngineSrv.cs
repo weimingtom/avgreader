@@ -13,18 +13,16 @@ namespace AVGreader.Service
 {
     public static class EngineSrv
     {
-        #region 声明
+        #region 私有变量声明
 
-        static Device _device;
-        static Control _parent;
-        static Sprite _sprite = null;
-        static bool _flag = true;
-        static MyEnum.RunStatement _NowRunState = MyEnum.RunStatement.RUNNING;
         
         #endregion
 
 
         #region 属性
+
+
+        private static Control _parent;
         /// <summary>
         /// 父窗口
         /// </summary>
@@ -33,6 +31,9 @@ namespace AVGreader.Service
             get { return _parent; }
             set { _parent = value; }
         }
+
+
+        private static Device _device;
         /// <summary>
         /// 渲染设备
         /// </summary>
@@ -41,6 +42,9 @@ namespace AVGreader.Service
             get { return _device; }
             set { _device = value; }
         }
+
+
+        private static Sprite _sprite = null;
         /// <summary>
         /// 渲染接口
         /// </summary>
@@ -49,6 +53,9 @@ namespace AVGreader.Service
             get { return EngineSrv._sprite; }
             set { EngineSrv._sprite = value; }
         }
+
+
+        private static bool _flag = true;
         /// <summary>
         /// 是否显示菜单框
         /// </summary>
@@ -57,16 +64,27 @@ namespace AVGreader.Service
             get { return EngineSrv._flag; }
             set { EngineSrv._flag = value; }
         }
+
+
+        private static MyEnum.RunStatement _nowRunState = MyEnum.RunStatement.RUNNING;
         /// <summary>
         /// 运行标记
         /// </summary>
-        public static MyEnum.RunStatement NowRunState
+        public static MyEnum.RunStatement nowRunState
         {
-            get { return _NowRunState; }
-            set { _NowRunState = value; }
+            get { return _nowRunState; }
+            set { _nowRunState = value; }
         }
 
-
+        private static long _nowIndex = 1;
+        /// <summary>
+        /// 主游戏循环的索引
+        /// </summary>
+        public static long nowIndex
+        {
+            get { return _nowIndex; }
+            set { _nowIndex = value; }
+        }
 
         #endregion
 
@@ -140,23 +158,21 @@ namespace AVGreader.Service
         #region 主循环
 
         /// <summary>
-        /// 主游戏循环
+        /// 游戏主循环
         /// </summary>
-        public static void Run ()
+        private static void MainLoop()
         {
-            //这里插入菜单
-
-            //脚本阅读模式一行一行判断并分发执行
-            foreach (string cmd in ScriptSrv.story.text)
+            //一行一行判断并分发执行
+            while (nowIndex <= ScriptSrv.story.LineNumber)
             {
-                if (NowRunState == MyEnum.RunStatement.RUNNING)
+                if (nowRunState == MyEnum.RunStatement.RUNNING)
                 {
-                    ScriptSrv.QueryScriptCommand(cmd);
+                    ScriptSrv.QueryScriptCommand(nowIndex);
                     FrameMove();
                     Render();
                     Application.DoEvents();
                 }
-                else if (NowRunState == MyEnum.RunStatement.PAGE)
+                else if (nowRunState == MyEnum.RunStatement.PAGE)
                 {
                     if (KeyboardSrv.keyState == null)
                     {
@@ -165,18 +181,44 @@ namespace AVGreader.Service
                     }
                     else
                     {
-                        NowRunState = MyEnum.RunStatement.RUNNING;
+                        nowRunState = MyEnum.RunStatement.RUNNING;
+                        ScriptSrv.QueryScriptCommand(nowIndex);
                         FrameMove();
                         Render();
                         Application.DoEvents();
                     }
                 }
-                else if (NowRunState == MyEnum.RunStatement.END)
+                else if (nowRunState == MyEnum.RunStatement.END)
                 {
-                    device.Dispose();
-                    Application.Exit();
+                    break;  //剧本执行完毕 跳出剧本循环
                 }
+
+                // 指向下一行
+                nowIndex++;
             }
+        }
+
+        /// <summary>
+        /// 游戏流程
+        /// </summary>
+        public static void Run ()
+        {
+            //菜单
+
+            //主循环
+            MainLoop();
+
+            //游戏结束，释放
+            ExitGame();
+        }
+
+        /// <summary>
+        /// 退出游戏
+        /// </summary>
+        private static void ExitGame()
+        {
+            device.Dispose();
+            Application.Exit();
         }
 
         #endregion

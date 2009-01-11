@@ -16,7 +16,7 @@ namespace AVGreader.Service
         private static string _fontFamily = "微软雅黑";
         private static float _fontSize = 20f;
         private static string _sentense = "null";
-        private static Point _position = new Point(125,125);
+        private static Point _position = new Point(150,150);
         private static Color _color = Color.White;
 
         private static string framePath = Application.StartupPath + @"\DATA\IMG\frame.png";
@@ -85,8 +85,16 @@ namespace AVGreader.Service
         /// <returns>文字内容</returns>
         public static void Render()
         {
-            EngineSrv.sprite.Draw2D(texFrame, Rectangle.Empty, new SizeF(600, 300), new PointF(200, 300), Color.White);
-            font.DrawText(EngineSrv.sprite, sentense, position, color);
+            EngineSrv.sprite.Draw2D(texFrame,               //绘制的纹理
+                                    Rectangle.Empty,        //选取的区域（空代表选择全部）
+                                    new SizeF(611, 270),    //绘制的大小
+                                    new PointF(253, 270),   //绘制的位置
+                                    Color.White);           //白色代表不使用任何颜色过滤
+            
+            font.DrawText(EngineSrv.sprite,                 //绘制的图层
+                          sentense,                         //字符串
+                          position,                         //字位置
+                          color);                           //字体颜色
         }
 
         #endregion

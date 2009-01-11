@@ -48,7 +48,11 @@ namespace AVGreader.Service
             if (texRole1 == null)
                 return;
             //图像，裁剪位置，呈现出来的大小，呈现位置，颜色（白色代表不应用任何过滤）
-            EngineSrv.sprite.Draw2D(texRole1, Rectangle.Empty, new SizeF(350, 600), new PointF(0, 30), Color.White);
+            EngineSrv.sprite.Draw2D(texRole1,               //绘制的纹理
+                                    Rectangle.Empty,        //裁剪纹理（空代表全部）
+                                    new SizeF(315, 540),    //绘制的大小
+                                    new PointF(96, 0),      //绘制的位置
+                                    Color.White);           //颜色过滤（白色代表不应用任何过滤）
             //EngineSrv.sprite.Draw2D(texRole2, Rectangle.Empty, new SizeF(512, 512), new PointF(0, 0), Color.White);
         }
 
