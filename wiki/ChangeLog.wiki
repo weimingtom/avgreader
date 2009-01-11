@@ -1,21 +1,28 @@
 #labels Featured,Phase-Implementation
 #How it grows...
-
-= Introduction =
-
 Write down how it grows, step by step...
 
+== 2009-1-11 ==
 
-= Details =
+   ====AVGreader.exe====
+   # 采用新方法读取脚本（ScriptReader中已经使用的方法）
+   # 将所有纹理的布局改成了宽屏的。（昨天遗留的问题）
+   ====resources 资源====
+   # 改变背景图为960*540。
+   # 改变角色图为540*315。
+   # 改变frame为611*270。
 
- * == 2009-1-10 ==
 
-   === ScriptReader] === 
-   # Modify 2 thumb panel as 16:9. 
-   # Add frame picture on graphic panel.
-   # Read SCENE as .JPG
-   === AVGreader ===
-   # Change window as 960*540, but didn't change any code inside. 
-   # Read SCENE as .JPG.
-   === resources ===
-   # Add 10 .JPG backgrounds.
+
+
+== [ 2009-1-10 ] ==
+
+  ====ScriptReader====
+  # 两个预览缩略图全部改成了16:9。
+  # 在GDI+的预览缩略图中加入了frame的显示（速度更慢了）。
+  # 读取场景(SCENE)文件时改成了读.JPG。
+  ====AVGreader====
+  # 讲窗口大小（客户区域）改为960*540，但没有修改其他任何应该被调整的代码。
+  # 读取场景(SCENE)文件时改成了读.JPG。
+  ====resources 资源====
+  # 加入10个.JPG的背景图，也保留了原来的bmp格式。
