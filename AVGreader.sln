@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVGreader", "AVGreader\AVGreader.csproj", "{BFB2E57B-F54A-4D0F-8AF1-F0A80E5E4872}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptReader", "ScriptReader\ScriptReader.csproj", "{CDF3A705-FC60-42DB-9279-ABC871CF8E28}"
